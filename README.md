@@ -54,7 +54,7 @@ The application is structured to provide a clean and intuitive user experience. 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/study-pal-task-manager.git
+   git clone https://github.com/Siddiq3/Todolist.git
 
 
 2. **Navigate to the Project Directory:**:
