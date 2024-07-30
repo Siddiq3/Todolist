@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Math Homework",
+    "description": "Complete exercises 1 to 10 on page 50",
+    "completed": false,
+    "lastUpdated": "2024-07-29T12:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Science Project",
+    "description": "Research and write a report on renewable energy sources",
+    "completed": false,
+    "lastUpdated": "2024-07-29T13:00:00Z"
+  },
+  {
+    "id": 3,
+    "title": "History Reading",
+    "description": "Read chapters 5 and 6 from the history textbook",
+    "completed": true,
+    "lastUpdated": "2024-07-30T09:00:00Z"
+  },
+  {
+    "id": 4,
+    "title": "English Essay",
+    "description": "Draft the first two pages of the essay on Shakespeare's plays",
+    "completed": false,
+    "lastUpdated": "2024-07-30T11:30:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Biology Lab Report",
+    "description": "Write a lab report on the dissection of a frog",
+    "completed": false,
+    "lastUpdated": "2024-07-30T14:00:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Geography Assignment",
+    "description": "Complete the map drawing of South America",
+    "completed": false,
+    "lastUpdated": "2024-07-30T15:45:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Physics Problems",
+    "description": "Solve problems 1 to 5 from chapter 4",
+    "completed": true,
+    "lastUpdated": "2024-07-30T17:00:00Z"
+  },
+  {
+    "id": 8,
+    "title": "Chemistry Quiz",
+    "description": "Revise chapter 7 for the upcoming quiz",
+    "completed": false,
+    "lastUpdated": "2024-07-30T18:30:00Z"
+  }
+]

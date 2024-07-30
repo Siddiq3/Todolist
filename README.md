@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# StudyPal Task Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+StudyPal Task Manager is a React application designed to assist users in managing their tasks. It allows users to create, update, delete, and mark tasks as done. The application features a search bar for filtering tasks and an expandable list format to view task details and the last update timestamp.
 
-In the project directory, you can run:
+## System Design
 
-### `npm start`
+The application is structured to provide a clean and intuitive user experience. It is built with React and follows a component-based architecture. Here’s a brief overview of the system design:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Components**:
+   - **`SearchBar`**: A component that provides a text input for filtering tasks based on the search query.
+   - **`TaskForm`**: A form component for adding and editing tasks. It includes fields for the task title and description.
+   - **`TaskItem`**: A component that displays individual tasks. It includes functionality to expand/collapse the task details, toggle completion status, and edit or delete tasks.
+   - **`TaskList`**: The main component that manages the list of tasks, handles user interactions, and integrates the other components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Data**:
+   - **`tasks.json`**: A dummy JSON file used to simulate task data. It includes a list of tasks with properties such as `id`, `title`, `description`, `completed`, and `lastUpdated`.
 
-### `npm test`
+3. **State Management**:
+   - The application uses React's state management to handle task data, search queries, and the task being edited.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Implementation
 
-### `npm run build`
+### Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **`SearchBar.js`**: 
+  - Renders an input field for searching tasks.
+  - Calls the `onSearch` function passed as a prop whenever the input value changes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **`TaskForm.js`**:
+  - Manages form state for task title and description.
+  - Handles form submission to create or update a task.
+  - Uses `useEffect` to populate form fields when editing a task.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **`TaskItem.js`**:
+  - Displays the task title and a button to toggle completion status.
+  - Provides expand/collapse functionality to show or hide task details.
+  - Includes buttons to edit or delete the task.
 
-### `npm run eject`
+- **`TaskList.js`**:
+  - Manages the list of tasks and integrates `SearchBar`, `TaskForm`, and `TaskItem` components.
+  - Implements search functionality and filters tasks based on the search query.
+  - Handles task creation, updating, deletion, and toggling.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Data
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **`tasks.json`**:
+  - Contains an array of task objects with fields such as `id`, `title`, `description`, `completed`, and `lastUpdated`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Setup
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/study-pal-task-manager.git
+
+
+2. **Navigate to the Project Directory:**:
+   ```bash
+   cd study-pal-task-manager
+
+   
+3. **Install Dependencies:**:
+   ```bash
+npm install
+
+
+
+4. **Start the Development Server:**:
+   ```bash
+npm start
+
+Open http://localhost:3000 in your browser to view the application. The page will reload automatically when you make changes.
+
+
+### Scripts
+
+## npm start: Runs the app in development mode.
+## npm test: Launches the test runner in interactive watch mode.
+## npm run build: Builds the app for production to the build folder.
+## npm run eject: Ejects the configuration files and dependencies (one-way operation).
+
+#### Contribution
+To contribute to this project:
+
+### Fork the repository.
+Create a new branch for your changes.
+Commit your changes with clear messages.
+Push your branch and create a pull request.
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Learn More
+For more information about React, check out the React documentation. For details on Create React App, see the Create React App documentation.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
